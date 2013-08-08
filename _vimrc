@@ -63,7 +63,7 @@ vmap <s-tab> <gv
 " 開關NERDTree
 map <F2> <ESC>:NERDTreeToggle<CR>
 " 使用g++編譯
-autocmd FileType cpp map <F9> <ESC>:!g++ % -o %<.exe<CR>
+autocmd FileType cpp map <F9> <ESC>:w<CR>:!g++ % -o %<.exe<CR>
 " 執行
 autocmd FileType cpp map <F5> <ESC>:!./%<.exe<CR>
 " 開啟name.in
